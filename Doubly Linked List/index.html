@@ -7,6 +7,224 @@
   </head>
   <body>
     <h1 style="text-align: center;">Doubly Linked List</h1>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Push PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>Create a new node with the value passed to the function</li>
+          <li>
+            If the head property is null, set the head and tail to be the newly
+            created node
+          </li>
+          <li>If not, set the next property on the tail to be that node</li>
+          <li>
+            Set the previous property on the newly created node to be the tail
+          </li>
+          <li>Set the tail to be the newly created node</li>
+          <li>Increment the length</li>
+          <li>Return the list</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Pop PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            If there is no head, return undefined
+          </li>
+          <li>Store the current tail in a variable to return later</li>
+          <li>If the length is 1, set the head and tail to be null</li>
+          <li>Update the tail to be the previous Node</li>
+          <li>Set the newTail's next to be null</li>
+          <li>Decrement the length</li>
+          <li>Return the value removed</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Shift PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>If the length is 0, return undefined</li>
+          <li>Store the current head property in a variable</li>
+          <li>
+            If the length is one
+            <ul>
+              <li>set the head to be null</li>
+              <li>set the tail to be null</li>
+            </ul>
+          </li>
+          <li>Update the head to be the next of the old head</li>
+          <li>Set the head's prev property to be null</li>
+          <li>Set the old head's next to be null</li>
+          <li>Decrement the length</li>
+          <li>Return old head</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Unshift PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a new node with the value passed to the function
+          </li>
+          <li>
+            If the length is 0
+            <ul>
+              <li>Set the head to be the new node</li>
+              <li>Set the tail to be the new node</li>
+            </ul>
+          </li>
+          <li>
+            Otherwise
+            <ul>
+              <li>
+                Set the prev property on the head of the list to be the new node
+              </li>
+              <li>
+                Set the next property on the new node to be the head property
+              </li>
+              <li>Update the head to be the new node</li>
+            </ul>
+          </li>
+          <li>
+            Increment the length
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Get PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            If the index is less than 0 or greater or equal to the length,
+            return null
+          </li>
+          <li>
+            If the index is less than or equal to half the length of the list
+            <ul>
+              <li>
+                Loop through the list starting from the head and loop towards
+                the middle
+              </li>
+              <li>Return the node once it is found</li>
+            </ul>
+          </li>
+          <li>
+            If the index is greater than half the length of the List
+            <ul>
+              <li>
+                Loop through the list starting from the tail and loop towards
+                the middle
+              </li>
+              <li>
+                Return the node once it is found
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Set PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a variable which is the result of the <b>get()</b> method at
+            the index passed to the function
+            <ul>
+              <li>
+                If the <b>get()</b> method returns a valid node, set the value
+                of that node to be the value passed to the function
+              </li>
+              <li>
+                Return true
+              </li>
+            </ul>
+          </li>
+          <li>
+            Otherwise, return false
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Insert PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            If the index is less than zero or greater than or equal to the
+            length, return false
+          </li>
+          <li>If the index is 0, <b>unshift</b></li>
+          <li>If the index is same as the length, <b>push</b></li>
+          <li>Use the <b>get()</b> method to access the index - 1</li>
+          <li>
+            Set the next and prev properties on the correct nodes to link
+            everything together
+          </li>
+          <li>Increment the length</li>
+          <li>Return true</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Remove PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            If the index is less than zero or greater than or equal to the
+            length, return undefined
+          </li>
+          <li>If the index is 0, <b>shift</b></li>
+          <li>If the index is same as the length - 1, <b>pop</b></li>
+          <li>
+            Use the <b>get()</b> method to retrieve the item to be removed
+          </li>
+          <li>
+            Update the next and prev properties to remove the found node from
+            the list
+          </li>
+          <li>
+            Set next and prev to null on the found node
+          </li>
+          <li>
+            Decrement the length
+          </li>
+          <li>
+            Return the removed node
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

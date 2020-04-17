@@ -1,3 +1,5 @@
+// implementation of stacks using Singly Linked List
+
 class Node {
   constructor(val) {
     this.val = val;

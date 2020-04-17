@@ -152,8 +152,6 @@ class SinglyLinkedList {
 
     console.log(arr);
   }
-
-  reverse() {}
 }
 
 var list = new SinglyLinkedList();
