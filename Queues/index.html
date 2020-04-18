@@ -8,6 +8,63 @@
   <body>
     <h1 style="text-align: center;">Queues</h1>
 
+    <div class="row">
+      <div class="heading">
+        <h1>Enqueue PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            This function accepts some value
+          </li>
+          <li>
+            Create a new node using that value passed to the function
+          </li>
+          <li>
+            If there are no nodes in the queue, set this node to be the first
+            and last property of the queue
+          </li>
+          <li>
+            Otherwise, set the next property on the current last to be that
+            node, and then set the last property of the queue to be that node
+          </li>
+          <li>
+            Increment the size by 1
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Dequeue PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            If there is no first property, just return null
+          </li>
+          <li>
+            Store the first property in a variable
+          </li>
+          <li>
+            See if the first is same as the last. If so, set the first and last
+            to be null
+          </li>
+          <li>
+            If there is more than 1 node, set the first property to be the next
+            property of first
+          </li>
+          <li>
+            Decrement size by 1
+          </li>
+          <li>
+            Return the value of the node dequeued
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
