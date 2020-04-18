@@ -44,3 +44,9 @@ class Stack {
     return temp.val;
   }
 }
+
+var stack = new Stack();
+
+stack.push("FIRST");
+stack.push("SECOND");
+stack.push("THIRD");
