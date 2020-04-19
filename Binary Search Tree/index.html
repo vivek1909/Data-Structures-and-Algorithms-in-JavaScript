@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Tree</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Binary Search Tree</h1>
+
+    <div class="row">
+      <div class="heading">
+        <h1>
+          Tree Terminologies
+        </h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li><b>Root - </b>The top node in a tree</li>
+          <li>
+            <b>Child - </b>A node directly connected to another node when moving
+            away from the root
+          </li>
+          <li><b>Parent - </b>The converse notion of a child</li>
+          <li><b>Siblings - </b>A group of nodes with same parent</li>
+          <li><b>Leaf - </b>A node with no children</li>
+          <li><b>Edge - </b>The connection b/w one node and another node</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Applications of Trees</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>HTML DOM</li>
+          <li>Network Routing</li>
+          <li>Abstract Syntax Tree</li>
+          <li>Artificial Intelligence</li>
+          <li>File System in an Operating System</li>
+          <li>JSON Parsed data</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Insert a node PseudoCode</h1>
+      </div>
+      <b>Steps: Iteratively or Recursively</b>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a new node
+          </li>
+          <li>
+            Starting at the root
+            <ul>
+              <li>
+                Create if there is a root, if not - the root now becomes that
+                new node
+              </li>
+              <li>
+                If there is a root, check if the value of the new node is
+                greater than or less than the value of the root
+              </li>
+              <li>
+                If it is greater
+                <ul>
+                  <li>
+                    Check to see if there is a node to the right
+                    <ul>
+                      <li>
+                        If there is, move to that node and repeat these steps
+                      </li>
+                      <li>
+                        If there is not, add that node as the right property
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                If it is less
+                <ul>
+                  <li>
+                    Check to see if there is a node to the left
+                    <ul>
+                      <li>
+                        If there is, move to that node and repeat these steps
+                      </li>
+                      <li>
+                        If there is not, add that node as the left property
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Find a node PseudoCode</h1>
+      </div>
+      <b>Steps: Iteratively or Recursively</b>
+      <div class="desc">
+        <ul>
+          <li>
+            Starting at the root
+            <ul>
+              <li>
+                Check if there is a root, if not - we're done searching
+              </li>
+              <li>
+                If there is a root, check if the value of the new node is the
+                value we are looking for. If we found it, we're done.
+              </li>
+              <li>
+                If not, check to see if the value is greater than or less than
+                the value of the root
+              </li>
+              <li>
+                If it is greater
+                <ul>
+                  <li>
+                    Check to see if there is a node to the right
+                    <ul>
+                      <li>
+                        If there is, move to that node and repeat these steps
+                      </li>
+                      <li>
+                        If there is not, we're done searching
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                If it is less
+                <ul>
+                  <li>
+                    Check to see if there is a node to the left
+                    <ul>
+                      <li>
+                        If there is, move to that node and repeat these steps
+                      </li>
+                      <li>
+                        If there is not, we're done searching.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
