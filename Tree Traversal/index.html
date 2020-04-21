@@ -46,6 +46,85 @@
       </div>
     </div>
 
+    <h2 style="text-align: center;">Depth First Search (DFS)</h2>
+
+    <div class="row">
+      <div class="heading">
+        <h1>DFS - PreOrder</h1>
+      </div>
+      <b>Steps - Recursively</b>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a variable to store the values of nodes visited
+          </li>
+          <li>
+            Store the root of the BST in a variable called current
+          </li>
+          <li>
+            Write a helper function which accepts a nodes
+            <ul>
+              <li>
+                Push the value of the node to the variable that stores the
+                values
+              </li>
+              <li>
+                If the node has a left property, call the helper function with
+                the left property on the node
+              </li>
+              <li>
+                If the node has a right property, call the helper function with
+                the right property on the node
+              </li>
+            </ul>
+          </li>
+          <li>
+            Return the array of values
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="heading">
+        <h1>DFS - PostOrder</h1>
+      </div>
+      <b>Steps - Recursively</b>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a variable to store the values of nodes visited
+          </li>
+          <li>
+            Store the root of the BST in a variable called current
+          </li>
+          <li>
+            Write a helper function which accepts a node
+            <ul>
+              <li>
+                If the node has a left property, call the helper function with
+                the left property on the node
+              </li>
+              <li>
+                If the node has a right property, call the helper function with
+                the right property on the node
+              </li>
+              <li>
+                Push the value of the node to the variable that stores the
+                values
+              </li>
+              <li>
+                Invoke the helper function with the current variable
+              </li>
+            </ul>
+          </li>
+          <li>
+            Return the array of values
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
