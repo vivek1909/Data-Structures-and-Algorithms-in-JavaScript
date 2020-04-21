@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Traversal</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Tree Traversal</h1>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Breadth First Search (BFS)</h1>
+      </div>
+      <b>Steps - Iteratively</b>
+      <div class="desc">
+        <ul>
+          <li>
+            Create a queue (can be an array instead) and a variable to store the
+            values of nodes visited
+          </li>
+          <li>
+            Place the root node in the queue
+          </li>
+          <li>
+            Loop as long as there is anything in the queue
+            <ul>
+              <li>
+                Dequeue a node from the queue and push the value of the node
+                into the variable that stores the nodes
+              </li>
+              <li>
+                If there is a left property on the node dequeued - add it to the
+                queue
+              </li>
+              <li>
+                If there is a right property on the node dequeued - add it to
+                the queue
+              </li>
+            </ul>
+          </li>
+          <li>
+            Return the variable that stores the values
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
