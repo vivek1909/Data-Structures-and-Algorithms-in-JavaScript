@@ -85,6 +85,57 @@ class BinarySearchTree {
     console.log(data);
     return data;
   }
+
+  DFSPreOrder() {
+    var data = [];
+
+    function traverse(node) {
+      data.push(node.val);
+
+      if (node.left) traverse(node.left);
+
+      if (node.right) traverse(node.right);
+    }
+
+    traverse(this.root);
+
+    console.log(data);
+    return data;
+  }
+
+  DFSPostOrder() {
+    var data = [];
+
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+
+      if (node.right) traverse(node.right);
+
+      data.push(node.val);
+    }
+
+    traverse(this.root);
+
+    console.log(data);
+    return data;
+  }
+
+  DFSInOrder() {
+    var data = [];
+
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+
+      data.push(node.val);
+
+      if (node.right) traverse(node.right);
+    }
+
+    traverse(this.root);
+
+    console.log(data);
+    return data;
+  }
 }
 
 var bst = new BinarySearchTree();
@@ -97,3 +148,6 @@ bst.insert(8);
 bst.insert(20);
 
 bst.BFS();
+bst.DFSPreOrder();
+bst.DFSPostOrder();
+bst.DFSInOrder();
