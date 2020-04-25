@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Heaps</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Binary Heaps (MaxBinary Heap)</h1>
+
+    <div class="row">
+      <div class="heading">
+        <h1>Insert PseudoCode</h1>
+      </div>
+      <div class="desc">
+        <ul>
+          <li>
+            Push the value into the values property on the heap
+          </li>
+          <li>
+            Bubble Up:
+            <ul>
+              <li>
+                Create a variable called index which is the length of the values
+                property - 1
+              </li>
+              <li>
+                Create a variable called parentIndex which is the floor of
+                (index - 1)/2
+              </li>
+              <li>
+                Keep looping as long as the values element at the parentIndex is
+                less than the values element at the child index
+                <ul>
+                  <li>
+                    Swap the values of the values element at the parentIndex
+                    with the value of the element property at the child index
+                  </li>
+                  <li>
+                    Set the index to be the parentIndex and start over
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
