@@ -80,10 +80,10 @@ class PriorityQueue {
   }
 }
 
-let priorityq = new PriorityQueue();
+let priorityQueue = new PriorityQueue();
 
-priorityq.enqueue("Common Cold", 1);
-priorityq.enqueue("Gunshot Wound", 5);
-priorityq.enqueue("High Fever", 3);
+priorityQueue.enqueue("Common Cold", 1);
+priorityQueue.enqueue("Gunshot Wound", 5);
+priorityQueue.enqueue("High Fever", 3);
 
-console.log(priorityq);
+console.log(priorityQueue);

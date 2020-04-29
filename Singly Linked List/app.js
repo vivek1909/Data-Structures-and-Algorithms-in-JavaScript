@@ -1,3 +1,4 @@
+// class initializing the values of nodes in a LL
 class Node {
   constructor(val) {
     this.val = val;
@@ -6,12 +7,14 @@ class Node {
 }
 
 class SinglyLinkedList {
+  // for initializing the head, tail and length of LL
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
 
+  // insert at first
   push(val) {
     // create a new node
     var newNode = new Node(val);
@@ -32,16 +35,20 @@ class SinglyLinkedList {
 
     // return list
     return this;
-
-    // old1 -> old2 -> newNode
   }
 
+  // remove last element
   pop() {
+    // check for null
     if (!this.head) return undefined;
+
+    // if not null, then define current and set our newTail to current
     var current = this.head;
     var newTail = current;
 
+    // loop until last element
     while (current.next) {
+      // set newTail to be the second last element
       newTail = current;
       current = current.next;
     }
